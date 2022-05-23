@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1653320248 source:d:\project\sliding puzzle\main.cpp
+	<SDL.h>
+	<SDL_ttf.h>
+	<iostream>
+	<vector>
+	<algorithm>
+	<functional>
+	<time.h>
+	<SDL_mixer.h>
+	"tile.h"
+	"stopwatch.h"
+	"button.h"
+
+1652196222 source:d:\project\sliding puzzle\button.cpp
+	"button.h"
+
+1652196493 d:\project\sliding puzzle\button.h
+	<SDL.h>
+	<SDL_ttf.h>
+	"userInterface.h"
+
+1652779762 d:\project\sliding puzzle\userinterface.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<iostream>
+
+1652196318 source:d:\project\sliding puzzle\src\headers.cpp
+	"headers.h"
+
+1652196318 d:\project\sliding puzzle\include\headers.h
+
+1653234534 source:d:\project\sliding puzzle\stopwatch.cpp
+	"stopwatch.h"
+
+1652196373 source:d:\project\sliding puzzle\tile.cpp
+	"tile.h"
+
+1652196541 d:\project\sliding puzzle\tile.h
+	<SDL.h>
+	<SDL_ttf.h>
+	"button.h"
+
+1652871876 source:d:\project\sliding puzzle\userinterface.cpp
+	"userInterface.h"
+
+1653234532 d:\project\sliding puzzle\stopwatch.h
+	<SDL.h>
+	<SDL_ttf.h>
+	<time.h>
+	<iostream>
+	"userInterface.h"
+

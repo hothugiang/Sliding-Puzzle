@@ -1,0 +1,16 @@
+#ifndef INCLUDE_
+#define INCLUDE_
+
+
+class include
+{
+    public:
+        include();
+        virtual ~include();
+
+    protected:
+
+    private:
+};
+
+#endif // INCLUDE_
