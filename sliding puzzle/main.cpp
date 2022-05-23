@@ -326,8 +326,8 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
     // Begin stopwatch
     stopwatch.start();
 
-    bool delayed = false;
     // Game loop
+    bool winsound = false;
     while (!stop) {
         // Handle events
         while (SDL_PollEvent(&event) != 0) {
@@ -417,11 +417,16 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
         }
 
         // If solved, turn tiles to green and stop stopwatch
+
         if (solved) {
             // Change colour of each tile to green to indicate completion
                 // Don't change colour of empty tile
-            Mix_Chunk* handclapSound = Mix_LoadWAV("Sound/HandClap.wav");
-            Mix_PlayChannel(-1, handclapSound, 0);
+            if (!winsound){
+                Mix_Chunk* handclapSound = Mix_LoadWAV("Sound/HandClap.wav");
+                Mix_PlayChannel(-1, handclapSound, 0);
+                winsound = true;
+            }
+
             stopwatch.changeColourTo(BUTTON_WIN_COLOR);
             for (int row = 0; row < tiles.size(); ++row) {
                 for (int col = 0; col < tiles[row].size(); ++col){
@@ -493,10 +498,6 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
             //SDL_RenderPresent(renderer);
 
             if (solved){
-                /*if (!delayed) {
-                    SDL_Delay(800);
-                    delayed = true;
-                }*/
                 SDL_RenderCopy(renderer, winText, NULL, NULL);
             }
 
@@ -527,7 +528,8 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
     font = nullptr;
 
     //tat nhac
-    Mix_CloseAudio();
+    Mix_HaltMusic();
+    Mix_HaltChannel(-1);
 }
 
 int main( int argc, char* args[] ) {
