@@ -1,6 +1,6 @@
 # Sliding-Puzzle
 **I. HƯỚNG DẪN CÀI ĐẶT**
-1. Tải mingw
+1. Tải và cài đặt mingw (nếu chưa có)
 - Tải mingw qua link https://sourceforge.net/projects/mingw/
 - Click đúp chuột vào file .exe vừa tải => Install
 
