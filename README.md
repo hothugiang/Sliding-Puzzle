@@ -3,6 +3,16 @@
 1. Tải và cài đặt mingw (nếu chưa có)
 - Tải mingw qua link https://sourceforge.net/projects/mingw/
 - Click đúp chuột vào file .exe vừa tải => Install
+- Link hướng dẫn tải: https://blogchiasekienthuc.com/lap-trinh/cai-dat-mingw-tren-windows-10.html
+
+2. Tải và chạy game
+- Download code từ github
+  + Nút code màu xanh bên phải màn hình
+  + Ấn Download ZIP
+  + Giải nén
+  + Vào folder bin/Debug
+  + Chạy file "siliding puzzle.exe"
+  + Chơi game :>>>
 
 
 **II. MÔ TẢ CHUNG VỀ TRÒ CHƠI, Ý TƯỞNG CHÍNH**
