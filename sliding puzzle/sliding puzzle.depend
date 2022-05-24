@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1653325065 source:d:\project\sliding puzzle\main.cpp
+1653370599 source:d:\project\sliding puzzle\main.cpp
 	<SDL.h>
 	<SDL_ttf.h>
 	<iostream>

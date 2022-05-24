@@ -180,7 +180,7 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
     const unsigned int TILE_HEIGHT = (SCREEN_HEIGHT - NUMBER_OF_COL_BORDERS * BORDER_THICKNESS) / NUMBER_OF_COL_ELEMENTS;
 
     SDL_Texture* winText = IMG_LoadTexture(renderer, "win.png");
-    int randNum = rand() % 10;
+    int randNum = rand() % 17;
     //cout << randNum << endl;
     string filename = "pic/pic" + to_string(randNum) + ".jpg";
     SDL_Texture* picture = IMG_LoadTexture(renderer, filename.c_str());
