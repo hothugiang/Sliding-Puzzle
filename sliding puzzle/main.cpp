@@ -36,9 +36,8 @@ bool isEmptyTileInNeighbours(tileArray& tiles, const int row, const int col, Til
     return false;
 }
 
+// Menu
 unsigned int playMenu(SDL_Renderer* renderer, bool* exit, const unsigned int SCREEN_WIDTH, const unsigned int SCREEN_HEIGHT) {
-    // This is a menu where the user can choose the difficulty of puzzle
-
     // User interface properties
     const unsigned int NUMBER_OF_ROW_ELEMENTS = 1;
     const unsigned int NUMBER_OF_COL_ELEMENTS = 4;
@@ -163,9 +162,9 @@ unsigned int playMenu(SDL_Renderer* renderer, bool* exit, const unsigned int SCR
 }
 
 void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULTY, const unsigned int SCREEN_WIDTH, const unsigned int SCREEN_HEIGHT) {
-    //BGM Music
+    // BGM Music
     srand(time(NULL));
-    int num = rand() % 3 + 1;
+    int num = rand() % 3 + 1; // Random from BGM 1 to 3
     string BGM_file_name = "Sound/BGM/" + to_string(num) + ".mp3";
     Mix_Music* BGM = Mix_LoadMUS(BGM_file_name.c_str());
     Mix_PlayMusic(BGM, -1);
@@ -180,8 +179,8 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
     const unsigned int TILE_HEIGHT = (SCREEN_HEIGHT - NUMBER_OF_COL_BORDERS * BORDER_THICKNESS) / NUMBER_OF_COL_ELEMENTS;
 
     SDL_Texture* winText = IMG_LoadTexture(renderer, "win.png");
-    int randNum = rand() % 17;
-    //cout << randNum << endl;
+    int randNum = rand() % 17; // Random from pic 0 to 17
+
     string filename = "pic/pic" + to_string(randNum) + ".jpg";
     SDL_Texture* picture = IMG_LoadTexture(renderer, filename.c_str());
     int picWidth, picHeight;
@@ -224,7 +223,7 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
     tileArray tiles;
     startY += TILE_HEIGHT;
     for (int row = 0; row < DIFFICULTY; ++row) {
-        vector<Tile> tileRow;
+        vector <Tile> tileRow;
         startY += BORDER_THICKNESS;
         startX = 0;
         for (int col = 0; col < DIFFICULTY; ++col) {
@@ -287,7 +286,7 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
     vector <vector<int>> neighbours;
     // Set seed for randomly picking neigbour tile
     srand(time(NULL));
-    // North, East, South, and West deltas
+    // Check up, right, down and left tile
     const int deltas[4][2] = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
     // Do shuffling
     for (int swap = 0; swap < TOTAL_SWAPS; ++swap) {
@@ -416,10 +415,10 @@ void playPuzzle(SDL_Renderer* renderer, bool* exit, const unsigned int DIFFICULT
             checkSolved = false;
         }
 
-        // If solved, turn tiles to green and stop stopwatch
+        // If solved, turn tiles to blue and stop stopwatch
 
         if (solved) {
-            // Change colour of each tile to green to indicate completion
+            // Change colour of each tile to blue to indicate completion
                 // Don't change colour of empty tile
             if (!winsound){
                 Mix_Chunk* handclapSound = Mix_LoadWAV("Sound/HandClap.wav");
@@ -565,7 +564,7 @@ int main( int argc, char* args[] ) {
         return -1;
     }
 
-    // Open game
+    // Picture open game
     SDL_Texture *tex = IMG_LoadTexture(renderer, "open.png");
     SDL_RenderCopy(renderer, tex, NULL, NULL);
     SDL_RenderPresent(renderer);
