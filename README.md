@@ -4,6 +4,7 @@
 - Tải mingw qua link https://sourceforge.net/projects/mingw/
 - 
 
+
 **II. MÔ TẢ CHUNG VỀ TRÒ CHƠI, Ý TƯỞNG CHÍNH**
 
 **1. Mô tả trò chơi**
@@ -15,17 +16,20 @@
 - Đồng hồ đếm ngược tính thời gian giải
 - Bảng sắp xếp theo thứ tự sai => Giải
 
+
 **III. CÁC CHỨC NĂNG ĐÃ CÀI ĐẶT**
 - Bảng menu chọn kích thước
 - Random ra bảng sắp xếp thứ tự sai để giải
 - Các ô vuông di chuyển lên, xuống, trái, phải
 - Hiệu ứng khi chọn các ô và nhạc nền
 
+
 **IV. CÁC KỸ THUẬT LẬP TRÌNH ĐÃ SỬ DỤNG**
 - Đặt tên biến, comment mỗi đầu đoạn code
 - Thuật toán sinh ra bảng theo thứ tự không đúng để giải
 - Sử dụng vector thay cho mảng bình thường
 - Sử dụng SDL để chèn ảnh, chèn nhạc, chèn hiệu ứng âm thanh, chuyển động trong game
+
 
 **V. KẾT LUẬN, HƯỚNG PHÁT TRIỂN, ĐIỀU RÚT RA ĐƯỢC**
 - Nên chia nhỏ file để dễ quản lý
