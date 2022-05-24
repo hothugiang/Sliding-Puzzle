@@ -11,11 +11,16 @@
 
 2. Ý tưởng chỉnh
 - Chọn kích thước bảng (độ khó)
-- Tạo đồng hồ đếm ngược
-- Tạo ra bảng sắp xếp theo thứ tự sai
+- Đồng hồ đếm ngược tính thời gian giải
+- Bảng sắp xếp theo thứ tự sai => Giải
 
 **III. CÁC CHỨC NĂNG ĐÃ CÀI ĐẶT**
+- Bảng menu chọn kích thước
+- Random ra bảng sắp xếp thứ tự sai để giải
+- Các ô vuông di chuyển lên, xuống, trái, phải
+- Hiệu ứng khi chọn các ô và nhạc nền
 
 **IV. CÁC KỸ THUẬT LẬP TRÌNH ĐÃ SỬ DỤNG**
+
 
 **V. KẾT LUẬN, HƯỚNG PHÁT TRIỂN, ĐIỀU RÚT RA ĐƯỢC**
