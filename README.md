@@ -6,6 +6,7 @@
 - Link hướng dẫn cài đặt: https://docs.google.com/document/d/1upNun0OxKlyYEEdvZxQ8Xc1X7DFBFwkzY4D7m8XuDNk/edit?usp=sharing
 
 2. Tải và chạy game
+
 Download code từ github: https://github.com/hothugiang/Sliding-Puzzle
   + Ấn nút code màu xanh bên phải màn hình
   + Ấn Download ZIP
