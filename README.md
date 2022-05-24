@@ -10,6 +10,11 @@
 **1. Mô tả trò chơi**
 - Sliding Puzzle là một tựa game xếp hình quen thuộc. Nhiệm vụ của người chơi là di chuyển các khối hình cạnh ô trống theo chiều lên, xuống hoặc trái, phải để giải ra một bức hình hoàn chỉnh
 - Video Demo: https://youtu.be/94StW7wt-cA
+- Cách chơi
+  + Chọn kích thước game: 3x3, 4x4, 5x5
+  + Góc trên phía bên phải là ảnh gốc sau khi hoàn thành, di chuyển các khối về lại vị trí đúng bằng cách bấm vào ô muốn di chuyển bên cạnh ô đen
+  + Quay lại màn hình chọn độ khó ấn nút "Menu"
+  + Thoát game ấn "Exit"
 
 **2. Ý tưởng chỉnh**
 - Chọn kích thước bảng (độ khó)
