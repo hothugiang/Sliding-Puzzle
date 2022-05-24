@@ -2,7 +2,7 @@
 **I. HƯỚNG DẪN CÀI ĐẶT**
 1. Tải mingw
 - Tải mingw qua link https://sourceforge.net/projects/mingw/
-- 
+- Click đúp chuột vào file .exe vừa tải => Install
 
 
 **II. MÔ TẢ CHUNG VỀ TRÒ CHƠI, Ý TƯỞNG CHÍNH**
