@@ -21,6 +21,20 @@
 - Hiệu ứng khi chọn các ô và nhạc nền
 
 **IV. CÁC KỸ THUẬT LẬP TRÌNH ĐÃ SỬ DỤNG**
-
+- Đặt tên biến, comment mỗi đầu đoạn code
+- Thuật toán sinh ra bảng theo thứ tự không đúng để giải
+- Sử dụng vector thay cho mảng bình thường
+- Sử dụng SDL để chèn ảnh, chèn nhạc, chèn hiệu ứng âm thanh, chuyển động trong game
 
 **V. KẾT LUẬN, HƯỚNG PHÁT TRIỂN, ĐIỀU RÚT RA ĐƯỢC**
+- Nên chia nhỏ file để dễ quản lý
+- Comment vào từng đoạn code để dễ đọc lại
+- Học được thêm về 4 thư viện SDL, cách quản lý file, đặt tên biến để dễ quản lý, kĩ năng tra google, tự học,...
+- Học thêm một số hàm, thư viện chưa gặp trong các bài tập
+- Hướng phát triển:
+  + Tính điểm, thêm rank, thêm hạng, lưu lại kết quả cao nhất của người chơi ở từng độ khó
+  + Tính số bước tối ưu để giải, đếm số bước của người chơi => so sánh và tính sao
+  + Thay đồng hồ đếm xuôi thành đếm ngược để thử thách
+  + Setting thay đổi màu giao diện người chơi
+  + Có thể thêm nút gợi ý hướng đi tiếp theo cho người chơi
+  + ...
