@@ -4,7 +4,7 @@
 ### 1. Tải và cài đặt mingw (nếu chưa có)
 - Tải mingw qua link https://sourceforge.net/projects/mingw/
 - Click đúp chuột vào file .exe vừa tải => Install
-- Link hướng dẫn cài đặt: https://docs.google.com/document/d/1upNun0OxKlyYEEdvZxQ8Xc1X7DFBFwkzY4D7m8XuDNk/edit?usp=sharing
+- Link hướng dẫn cài đặt chi tiết: https://docs.google.com/document/d/1upNun0OxKlyYEEdvZxQ8Xc1X7DFBFwkzY4D7m8XuDNk/edit?usp=sharing
 
 ### 2. Tải và chạy game
 
